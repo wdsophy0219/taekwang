@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+html,body {width:100%;height:100%;}
+body {overflow:auto; font-size:14px; font-family:'Oswald','Calibri','Malgun Gothic', sans-serif;-webkit-text-size-adjust:none}
+
+#wrap {height: 80px; position :relative; z-index:100; }
+#header {background-color: #FFF; outline:1px #F00 solid; overflow: hidden;}
+.header_wrap {padding: 0 30px; height:80px; background-color: #000;}
+.header_wrap .logo h1 {width:62px; height: 44px; margin-top: 18px; float:left;}
+.header_wrap .m_menu {width: 1100px; height:80px;  margin:0 auto;}
+.header_wrap .m_menu>ul>li {float: left; width: 190px;  padding: 0 15px; text-align: center; }
+.header_wrap .m_menu>ul>li>a {white-space: nowrap; text-transform: uppercase; font-weight: bold; letter-spacing: 0.04em; color:#FFF; cursor: pointer; line-height: 80px;}
+.header_wrap .m_menu ul>li>a:hover {color:#199394;}
+.header_wrap .m_menu ul>li div {padding:30px 0;}
+.header_wrap .m_menu ul>li li a {line-height: 35px; white-space: nowrap; letter-spacing: -0.03em; font-weight: 400; color: #555;}
+.header_wrap .m_menu ul>li div {display: none;}
+.header_wrap .m_menu ul>li li a:hover {color:#199394; font-weight: 600;}
+.header_wrap .n_right { width:124px; height:35px; float:right; position: absolute; top: 18px; right: 20px;}
+.n_right .bt_home {width:40px; height: 35px; position: absolute; top:0px; left: 0px; background-color: #222;}
+.n_right .bt_home span i::before {display: block; position: absolute; top:6px; right: 9px;  color: #FFF;}
+.n_right .bt_home:hover {background-color: #555;}
+.n_right .bt_lang {width:40px; height: 35px; position: absolute; top:0x; left: 41px; background-color: #086c6d;}
+.n_right .bt_lang a {display: block; position: absolute; top:6px; right: 9px;  color: #fff; font-weight: 400;}
+.n_right .bt_lang:hover { background-color: #199394;}
+.n_right .s_map {position: absolute; top: 0; right: 0; width: 40px; height: 100%; cursor: pointer;}
+.n_right .s_map:hover .line1 {animation: line1 2s infinite;}
+.n_right .s_map:hover .line2 {animation: line2 2s infinite;}
+.n_right .s_map:hover .line3 {animation: line3 2s infinite;}
+.n_right .s_map span {display: block;  height: 2px;  background-color: #fff;}
+.n_right .s_map .line1 {position: absolute; top: 9px; right: 10px; width: 22px;}
+.n_right .s_map .line2 {position: absolute; top: 17px; right: 10px; width: 13px;}
+.n_right .s_map .line3 {position: absolute; top: 25px; right: 10px; width: 22px;}
+@keyframes aniline1 {
+    0% { width:22px; }
+    50% {width:32px;  }
+    100% { width:22px; }
+}
+@keyframes aniline2 {
+    0% { width:22px; }
+    80% {width:32px;  }
+    100% { width:22px; }
+}
+
+
+@media screen and (max-width:1000px) {
+    #wrap{
+        position:static;
+    }
+    #header{
+        overflow:visible;
+    }
+
+    .header_wrap .n_right{
+        position:absolute;
+        right:0;
+        height:100%;
+        width:223px;
+        background-color:#FFF;
+    }
+    .header_wrap .n_right>ul>li{
+        background-color:#FFF;
+        text-align: left;
+    }
+
+    .header_wrap .n_right>ul>li>a{
+        color:#000;
+        line-height:68px;
+    }
+
+    .header_wrap .n_right>ul li a{
+        padding: 0 20px;
+    }
+
+    .header_wrap .n_right>ul>li div{
+        padding: 0;
+    }
+    .header_wrap .n_right>ul>li:hover div{
+        display: block;
+    }
+}
+
+
+#container
+.m-visual-wrap {position:relative; z-index:-1;}
+.m-visual-wrap .slogan img {position: absolute; left: 50%; top:50%; margin-left:-205px; margin-top:-35px;}
+
+.m-about {overflow: hidden;}
+.m-about li {width:33.3333%; float:left; overflow:hidden; transition:1s; position: relative;}
+.m-about li img{ width:100%; vertical-align:top; transition:1s ease-out;}
+.m-about li:hover img{transform:scale(1.5,1.5) rotate(15deg);}
+.m-about li:after {content:"";position:absolute; left:0; top:0;right:0; bottom:0; background-color:rgba(0,131,132,0.5); opacity:0; transition:0.4s ease-out;}
+.m-about li:hover:after {opacity:1;}
+.m-about li div {margin:5px;}
+.m-about li .txt {position:absolute; left:0; top:0; z-index: 10; color:#FFF; font-size:20px; top:50%; line-height:20px; margin-top:-10px; width:100%; text-align:center;}
+.m-about li .txt .box {display:inline-block; padding:10px 20px; position:relative; line-height: 22px;
+letter-spacing: 0.03em; text-transform: uppercase; font-weight: 600;color: #fff; font-size: 25px;}
+.m-about li .txt .box::after {content: ""; width: 20px; height: 3px; background-color: #FFF; position: absolute; top: -22px; margin-left: -10px;}
+.m-about li .txt .box .line1 {position:absolute; height:4px; background-color:#FFF; width:0; top:0; left:0; transition:0.3s ease-out; transition-delay:0;}
+.m-about li .txt .box .line2 {position:absolute; height:0; background-color:#FFF; width:4px; top:0; right:0; transition:0.3s ease-out; transition-delay:0.3s;}
+.m-about li .txt .box .line3 {position:absolute; height:4px; background-color:#FFF; width:0; bottom:0; right:0; transition:0.3s ease-out; transition-delay:0.9s;}
+.m-about li .txt .box .line4 {position:absolute; height:0; background-color:#FFF; width:4px; bottom:0; left:0; transition:0.3s ease-out; transition-delay:1.2s;}
+
+.m-about li:hover .box .line1 {width:100%;}
+.m-about li:hover .box .line2 {height:100%;}
+.m-about li:hover .box .line3 {width:100%;}
+.m-about li:hover .box .line4 {height:100%;}
+
+@media screen and (max-width:480px) {
+     .m-about li{
+         float:none;
+         width:auto;
+     }
+}
+
+.m-global {background-image:url(url(img/global-01.png), url(img/global-02.png) url(img/global-03.png), url(img/global-04.png), url(img/global-05.png), url(img/global-06.png); background-size:1332px 574px;  background-repeat:no-repeat;}
