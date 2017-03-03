@@ -5,13 +5,20 @@
   <title>태광실업</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="common.css" type="text/css" />
+  <link rel="stylesheet" href="animate.css">
   <link rel="stylesheet" href="font/flaticon.css" type="text/css" />
-  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="layout.css" type="text/css" />
+  <link rel="stylesheet" href="content.css" type="text/css" />
 
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+
+  <script src="wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
 
 </head>
 <body>
@@ -135,27 +142,29 @@
       <div class="m-global">
         <h3>Global Networks</h3>
         <div class="global-01"><img src="img/global-01.png" alt="" ></div>
-        <div class="global-02"><img src="img/global-02.png" alt="" >
-          <p class="txt">taekwang "gimhae / korea"</p>
+        <div class="global-02 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0"><img src="img/global-02.png" alt="" >
+          <p class="txt"><strong>taekwang</strong>
+              gimhae / korea</p>
           <span class="line1"></span>
           <span class="line2"></span>
         </div>
-        <div class="global-03"><img src="img/global-03.png" alt="" >
-          <p class="txt">BUSINESS PARTNER "Portland / USA"</p>
+        <div class="global-03 wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s"><img src="img/global-03.png" alt="" >
+          <p class="txt"><strong>BUSINESS PARTNER</strong>
+              Portland / USA</p>
           <span class="line1"></span>
           <span class="line2"></span>
         </div>
-        <div class="global-04"><img src="img/global-04.png" alt="">
-          <p class="txt">Qingdao / China"</p>
+        <div class="global-04 wow bounceInUp" data-wow-duration="1s" data-wow-delay="2s"><img src="img/global-04.png" alt="">
+          <p class="txt">Qingdao / China</p>
           <span class="line1"></span>
           <span class="line2"></span>
         </div>
-        <div class="global-05"><img src="img/global-05.png" alt="">
-          <p class="txt">"Bien Hoa / Vietnam" "Moc Bai / vietnam"</p>
+        <div class="global-05 wow bounceInUp" data-wow-duration="1s" data-wow-delay="2s"><img src="img/global-05.png" alt="">
+          <p class="txt">Bien Hoa / Vietnam<br>Moc Bai / vietnam</p>
           <span class="line1"></span>
           <span class="line2"></span>
         </div>
-        <div class="global-06"><img src="img/global-06/png" alt="">
+        <div class="global-06 wow bounceInUp" data-wow-duration="1s" data-wow-delay="2s"><img src="img/global-06.png" alt="">
           <p class="txt">SUBANG / Indonesia</p>
           <span class="line1"></span>
           <span class="line2"></span>
@@ -168,19 +177,18 @@
 
 
       <div class="m-social">
-        <h3 class="blind">주요활동</h3>
         <ul>
           <li><a href="">
-            <span class="img"><img src="img/social-01.jpg" alt="" width="948" height="445"></span>
-            <span class="btxt">"social contribution"</span>
+            <span class="img"><img src="img/social-01.jpg" alt=""></span>
+            <span class="btxt">social contribution</span>
             <span class="stxt">사회공헌활동</span>
             <span class="line1"></span>
             <span class="line2"></span>
           </a>
         </li>
         <li><a href="">
-          <span class="img"><img src="img/social-02.jpg" alt="" width="948" height="445"></span>
-          <span class="btxt">"social contribution"</span>
+          <span class="img"><img src="img/social-02.jpg" alt=""></span>
+          <span class="btxt">jeongsan scholarship foundation</span>
           <span class="stxt">정신장학재단</span>
           <span class="line1"></span>
           <span class="line2"></span>
@@ -189,9 +197,7 @@
     </ul>
   </div>
   <div class="m-add">
-    <div class="bg">
-      <img src="img/add-bg.jpg" alt="" width="1017" height="442">
-    </div>
+     <img src="img/add-bg.jpg" alt="">
   </div>
 
 </div>
@@ -201,20 +207,19 @@
 <div id ="footer">
   <div class="footer-top">
     <ul>
-      <li>개인정보처리방침</li>
-      <li>지속가능보고서 다운로드</li>
+      <li class="first"><a href=""><span>개인정보처리방침</span></a></li>
+      <li><a href=""><span>지속가능보고서 다운로드</span></a></li>
     </ul>
   </div>
   <div class="f-copyright">
-    <p class="p_logo"><img src="img/f-logo.png" alt="태광실업"</p>
-    <div class="p_info">
+    <p class="p-logo"><img src="img/f-logo.png" alt="태광실업"</p>
+    <div class="p-info">
       <span>태광실업(주)</span>
       <span>경상남도 김해시 김대대로 2635번길 26(안동)</span>
       <span>TEL : 055-333-7251</span>
       <span>FAX : 055-336-4917</span>
-    </ul>
   </div>
-  <div class="p_copyright">
+  <div class="p-copyright">
     Copyright(c) 2016 Taekwang. co, ltd All rights reserved.
   </div>
 </div>

@@ -18,7 +18,6 @@ article,aside,canvas,details,figcaption,figure,main,
 footer,header,hgroup,menu,nav,section,summary {display:block;}
 nav, ul {list-style:none;}
 blockquote,q {quotes:none;}
-blockquote:before,blockquote:after,
 img,video{vertical-align:top;}
 
 a{text-decoration:none;}

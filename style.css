@@ -81,7 +81,7 @@ body {overflow:auto; font-size:14px; font-family:'Oswald','Calibri','Malgun Goth
 }
 
 
-#container
+/*#container*/
 .m-visual-wrap {position:relative; z-index:-1;}
 .m-visual-wrap .slogan img {position: absolute; left: 50%; top:50%; margin-left:-205px; margin-top:-35px;}
 
@@ -96,6 +96,7 @@ body {overflow:auto; font-size:14px; font-family:'Oswald','Calibri','Malgun Goth
 .m-about li .txt .box {display:inline-block; padding:10px 20px; position:relative; line-height: 22px;
 letter-spacing: 0.03em; text-transform: uppercase; font-weight: 600;color: #fff; font-size: 25px;}
 .m-about li .txt .box::after {content: ""; width: 20px; height: 3px; background-color: #FFF; position: absolute; top: -22px; margin-left: -10px;}
+.m-about li .txt .box:hover::after {width: 0; opacity:0; transition:0.4s ease-out;}
 .m-about li .txt .box .line1 {position:absolute; height:4px; background-color:#FFF; width:0; top:0; left:0; transition:0.3s ease-out; transition-delay:0;}
 .m-about li .txt .box .line2 {position:absolute; height:0; background-color:#FFF; width:4px; top:0; right:0; transition:0.3s ease-out; transition-delay:0.3s;}
 .m-about li .txt .box .line3 {position:absolute; height:4px; background-color:#FFF; width:0; bottom:0; right:0; transition:0.3s ease-out; transition-delay:0.9s;}
@@ -113,4 +114,58 @@ letter-spacing: 0.03em; text-transform: uppercase; font-weight: 600;color: #fff;
      }
 }
 
-.m-global {background-image:url(url(img/global-01.png), url(img/global-02.png) url(img/global-03.png), url(img/global-04.png), url(img/global-05.png), url(img/global-06.png); background-size:1332px 574px;  background-repeat:no-repeat;}
+.m-global {height: 900px; background: #1d2227; background-image: url(img/global-bg.jpg); background-repeat: repeat-x; position: relative;}
+.m-global h3 {text-transform: uppercase; text-align: center; letter-spacing: 0.05em;
+font-size: 42px; font-weight: 600; color: #fff; line-height: 1; padding-top: 100px;}
+.m-global .global-01, .global-02, .global-03, .global-04, .global-05, .global-06 {width: 1332px; height: 574px; top: 236px; left: 50%; margin-left: -666px; position: absolute;}
+.global-02 p.txt {font-family: 'Calibri'; font-size: 15px; color: #fff; text-transform: uppercase; text-align: left; position: absolute; left: 676px; top: 196px; line-height: 140%;}
+.global-02 p.txt strong {font-weight: 300; font-size: 17px; display: block;}
+.global-02 .line1 {width: 1px; height: 27px;left: 613px; top: 190px; position:absolute; background: rgba(255,255,255,0.4);}
+.global-02 .line2 {width: 50px; height: 1px; left: 614px; top: 216px; position: absolute; background: rgba(255,255,255,0.4);}
+.global-03 p.txt {font-family: 'Calibri'; font-size: 15px; color: #ec7a00; text-transform: uppercase; text-align: left; position: absolute; left: 1050px; top: 235px; line-height: 140%;}
+.global-03 p.txt strong {font-weight: 300; font-size: 17px; display: block;}
+.global-03 .line1 {width: 1px; height: 97px; left: 871px; top: 160px; position: absolute; background-color: rgba(236, 122, 0, 0.4);}
+.global-03 .line2 {width: 166px; height: 1px; left: 872px; top: 256px; position: absolute; background: rgba(236, 122, 0, 0.4);}
+.global-04 p.txt {font-family: 'Calibri'; font-size: 15px; color: #fff; text-transform: uppercase; text-align: left; position: absolute; left: 408px; top: 116px; line-height: 140%;}
+.global-04 .line1 {width: 1px; height: 36px; left: 518px; top: 138px; position:absolute; background: rgba(255,255,255,0.4);}
+.global-04 .line2 {width: 60px; height: 1px; left: 519px; top: 173px;  position: absolute; background: rgba(255,255,255,0.4);}
+.global-05 p.txt {font-family: 'Calibri'; font-size: 15px; color: #fff; text-transform: uppercase; text-align: left; position: absolute; left: 676px; top: 270px; line-height: 140%;}
+.global-05 .line1 {width: 98px; height: 1px; left: 567px; top: 283px; position:absolute; background: rgba(255,255,255,0.4);}
+.global-05 .line2 {width: 1px; height: 22px; left: 647px; top: 284px;  position: absolute; background: rgba(255,255,255,0.4);}
+.global-05 .line3 {wwidth: 17px; height: 1px; left: 648px; top: 305px;  position: absolute; background: rgba(255,255,255,0.4);}
+.global-06 p.txt {font-family: 'Calibri'; font-size: 15px; color: #fff; text-transform: uppercase; text-align: left; position: absolute; left: 372px; top: 389px; line-height: 140%;}
+.global-06 .line1 {width: 47px; height: 1px; left: 516px; top: 400px; position:absolute; background: rgba(255,255,255,0.4);}
+.global-06 .line2 {width: 1px; height: 37px; left: 563px; top: 364px;  position: absolute; background: rgba(255,255,255,0.4);}
+
+
+.m-social ul li {float:left; width: 50%;}
+.m-social ul li img{width:100%; vertical-align:top; transition:1s ease-out;}
+.m-social ul li:hover img {transform:scale(1.1,1.1)}
+.m-social ul li a {position: relative; display: block; overflow: hidden;}
+.m-social .btxt {position: absolute; z-index: 7; line-height: 22px; letter-spacing: 0.03em; text-transform: uppercase; height: 22px; top: 50%; margin-top: -11px; left: 50%;
+width: 440px; margin-left: -220px; font-weight: 600; color: #fff; font-size: 25px; text-align:center;}
+.m-social .btxt::after {content: ""; width: 20px; height: 3px; background: #fff; top: -22px; margin-left: -10px; left: 50%; position: absolute; display: block; }
+.m-social .btxt:hover::after {width: 0; transition:0.4s ease-out;}
+.m-social .stxt {position: absolute; z-index: 7; font-family: "Malgun Gothic"; line-height: 20px; letter-spacing: 0; text-transform: uppercase; height: 20px; top: 60%; margin-top: -11px; left: 50%; width: 440px; margin-left: -220px; font-weight: 300; color: #fff; font-size: 20px; text-align:center;}
+.m-social .line2::after {content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 3; display: block; background: rgba(0,131,132,0.5); opacity:0; transition:0.4s ease-out;}
+.m-social .line2:hover::after {opacity:1; transition:0.4s ease-out;}
+
+.m-add img {width: 100%; vertical-align: top;}
+
+
+#footer {width: 100%; background: #000; z-index: 999; display: block; color: #FFF; margin: 0 auto; text-align: center; font-family: 'Malgun Gothic';}
+.footer-top {height: 70px; background: #191919; }
+.footer-top ul li {float: left; width: 50%; text-align: center; }
+.footer-top ul li a {outline: 1px solid #f00; line-height: 1.25em; margin: 27px 0 26px 0; width: 100%; color: #fff; display: inline-block;}
+
+.footer-top li span {position: relative; display: inline-block; padding-left: 40px; font-family: 'Malgun Gothic'; padding-right: 30px; background: url(img/ftoplink_arr.png) no-repeat right center; color: #e8e8e8;}
+.footer-top li:nth-child(1) a span::before {content: ""; position: absolute; left: 0; top: 0; width: 26px; height: 26px; background: url(img/ftoplink_ico01.png) no-repeat 0 center; top: -6px;}
+.footer-top li:nth-child(2) a span::before {content: ""; position: absolute; left: 0; top: 0; width: 26px; height: 26px; backgr ound: url(img/ftoplink_ico02.png) no-repeat 0 center; top: -6px;}
+.footer-top li span:hover {text-decoration: underline;}
+
+
+
+.f-copyright {padding: 60px 0;   background-repeat: }
+.f-copyright .p_logo {margin-bottom: 30px;}
+.f-copyright .p_info span {color: #b5b5b5; line-height:120%;}
+.p-copyright {margin-top: 5px; color: #535353; line-height: 120%;}
