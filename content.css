@@ -85,8 +85,33 @@ width: 440px; margin-left: -220px; font-weight: 600; color: #fff; font-size: 25p
 .sub1_conts {width: 1200px}
 .sub_conts h2 a {display: block; font-size: 36px; font-weight: 400; font-family: "Malgun Gothic"; text-transform: uppercase; line-height: 1.2em; color: #111; letter-spacing: -0.03em;}
 
-.sub1_conts {padding: 42px 0;}
-.sub_conts {min-height: 350px; letter-spacing: -0.02em; word-break: keep-all; word-wrap: break-word;}
+
+#ub1_conts {min-height: 350px; letter-spacing: -0.02em;}
+#sub1_conts_wrap {font-family: "Malgun Gothic"; letter-spacing: -0.03em; line-height: 150%; padding-bottom: 70px; color: #555;}
+.conts_top {position: relative; max-width: 1200px; margin: 0 auto;}
+.con_tit {line-height: 1.2em; padding: 72px 0; text-align: center;}
+.con_tit h2 {display:block; font-size:36px; font-weight:400; font-family:"Malgun Gothic"; text-transform:uppercase;line-height:1.2em; color:#111; letter-spacing:-0.03em;}
+.con_tit .con-prev, .con_tit .con-next {position:absolute; top:50%; width:62px; height:62px; margin-top:-31px;}
+.con_tit .con-prev, .con_tit .con-next {transition-delay:0.3s;-webkit-transition:all 0.3s ease-out;-moz-transition:all 0.3s ease-out;-o-transition:all 0.3s ease-out;	transition:all 0.3s ease-out;}
+.con_tit .con-prev {background:url(img/cont-prev.png); background-repeat: no-repeat; left:0;}
+.con_tit .con-next {background:url(img/cont-next.png); background-repeat: no-repeat; right:0;}
+.con_tit .con-prev:hover, .con-tit .con-next:hover {transition-delay:0.3s;-webkit-transition:all 0.3s ease-out;-moz-transition:all 0.3s ease-out;-o-transition:all 0.3s ease-out;	transition:all 0.3s ease-out;}
+.con_tit .con-prev:hover {background:url(img/cont-prev-o.png); background-repeat: no-repeat;}
+.con_tit .con-next:hover {background:url(img/cont-next-o.png); background-repeat: no-repeat;}
+
+.vision-bg:after {background:url(/kor/_Img/Content/vision-bg.jpg) no-repeat center top;width:2000px;height:100%;display:block;content:"";position:absolute;left:50%;margin-left:-1000px;z-index:-2;top:0}
+.vision-top {position:relative;min-height:420px;margin-bottom:105px;}
+.vision-top:after {background:url(img/vision-top.jpg); background-repeat: no-repeat; background-position:center top; width:2000px; height:100%; display:block; content:"";position:absolute;left:50%;margin-left:-1000px;z-index:-1;top:0}
+.vision-top .btxt {line-height:110%;height:85px;color:#000;font-family:'Oswald';font-size:45px;text-align:center;font-weight:600;letter-spacing:0.01em;text-transform:uppercase;}
+.vision-top .stxt {font-family:'Oswald';font-size:25px;font-weight:400;text-align:center;text-transform:uppercase;color:#fff;padding:130px 0 30px 0;}
+.vision-top .ctxt {line-height:120%;color:#fff;font-family:'Oswald';font-size:50px;text-align:center;font-weight:600;letter-spacing:0.01em;text-transform:uppercase;}
+
+
+
+
+
+
+
 
 
 
