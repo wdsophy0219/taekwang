@@ -93,7 +93,7 @@ width: 440px; margin-left: -220px; font-weight: 600; color: #fff; font-size: 25p
 .st_navi .lm_l2.over {background: rgba(5,158,159, 0.7);}
 .st_navi .over a:hover {text-decoration: none;}
 
-#sub1-conts-wrap {min.lm_l2-height:350px; letter-spacing:-0.02em; word-break:keep-all; word-wrap:break-word;}
+#sub1-conts-wrap {min-height:350px; letter-spacing:-0.02em; word-break:keep-all; word-wrap:break-word; padding: 0 30px;}
 .sub1-contop {position:relative; max-width:1200px; margin:0 auto;}
 .sub1-contop .con_tit {line-height: 1.2em; padding: 72px 0; text-align: center;}
 .con_tit h2 {display:block; font-size:36px; font-weight:400; font-family:"Malgun Gothic"; text-transform:uppercase;line-height:1.2em; color:#111; letter-spacing:-0.03em;}
@@ -105,7 +105,7 @@ width: 440px; margin-left: -220px; font-weight: 600; color: #fff; font-size: 25p
 .con_tit .con-prev:hover {background:url(img/cont-prev-o.png); background-repeat: no-repeat;}
 .con_tit .con-next:hover {background:url(img/cont-next-o.png); background-repeat: no-repeat;}
 
-#sub1-container {position:relative;display:block;}
+#sub1-container {position:relative;display:block; width: 100%; text-align: center; margin: 0 auto;}
 #sub1-container:after {content:"";display:block; clear:both;}
 
 .vision-bg:after {background:url(img/vision-bg.jpg); background-repeat: no-repeat; background-position: center top; width:2000px; height:100%;display:block;content:"";position:absolute;left:50%;margin-left:-1000px;z-index:-2;top:0}
@@ -114,13 +114,53 @@ width: 440px; margin-left: -220px; font-weight: 600; color: #fff; font-size: 25p
 .vision-top .stxt {font-family:'Oswald'; font-size:25px; font-weight:400; text-align:center; text-transform:uppercase; color:#fff; padding:130px 0 30px 0;}
 .vision-top .ctxt {line-height:120%; color:#fff; font-family:'Oswald'; font-size:50px; text-align:center; font-weight:600; letter-spacing:0.01em; text-transform:uppercase;}
 
-.vision-mtit {opacity: 1; padding-top: 0px;}
+.vision-mtit {position:relative; text-align:center; color:#333; line-height:1; letter-spacing:-0.02em; padding-bottom:50px; margin-bottom:75px;}
 .vision-mtit .mtxt {font-size: 25px; font-weight: normal;}
 .vision-mtit:after {content: ""; width: 20px; height: 3px; position: absolute; left: 50%; margin-left: -10px; bottom: 0; background: #333; display: block;}
 .vision-mtit .btxt {display: block; font-weight: bold; font-size: 34px; margin-top: 20px;}
 
 
+.vision-flow {text-align:center;}
+.vision-flow .flow-sec {position:relative; margin-bottom:90px;}
+.vision-flow .flow-sec .ctit {position:absolute; left:50px; top:80px; width:123px; height:48px; padding:22px 0 0 45px; text-align:left; font-size:20px; font-weight:bold; color:#fff; background:url(img/vision_bul.png); background-repeat:no-repeat; background-position: 0 0;}
+.vision-flow .flow-sec p img {max-width:100%;}
+.vision-flow .last img {max-width:100%;}
+.vision-flow .last {position:relative; width:100%; height:190px;}
+.vision-flow .last:after {background:url(img/vision_03.png); background-repeat: no-repeat; background-position: center top; width:1200px; height:100%; display:block; content:""; position:absolute; left:50%; margin-left:-600px; z-index:-1; top:0}
 
+@media only screen and (max-width:1200px){
+	.vision-flow .flow-sec .ctit {position:relative; left:auto; top:auto; width:125px; height:48px; padding:22px 55px 0 0; text-align:center;}
+}
+@media only screen and (max-width:1000px){
+	.vision-top .ctxt .break {display:block;}
+}
+@media only screen and (max-width:800px){
+	.vision-top {min-height:340px;}
+	.vision-top .stxt {padding-top:80px;}
+}
+@media only screen and (max-width:600px){
+	.vision-top {margin-bottom:60px;}
+	.vision-top:after {background-size:contain;}
+	.vision-top .ctxt {font-size:40px;}
+
+	.vision-mtit {padding-bottom:30px; margin-bottom:40px;}
+	.vision-mtit .btxt {font-size:30px;}
+
+	.vision-flow .flow-sec {margin-bottom:40px;}
+	.vision-flow .flow-sec .ctit {font-size:18px; width:82px; height:46px; line-height:46px; padding:0; padding-right:40px; margin-bottom:20px; background-size:auto 100%;}
+	.vision-flow .last {height:130px;}
+	.vision-flow .last:after {background-size:contain; width:800px; margin-left:-400px;}
+}
+@media only screen and (max-width:480px){
+	.vision-top {min-height:auto; padding-bottom:50px}
+	.vision-top .stxt {padding-top:50px; padding-bottom:15px; font-size:18px;}
+	.vision-top .ctxt {font-size:26px; letter-spacing:0; font-weight:400;}
+	.vision-mtit .mtxt {font-size:19px;}
+	.vision-mtit .btxt {font-size:24px; margin-top:10px;}
+
+	.vision-flow .flow-sec .ctit {font-size:16px; width:75px; height:42px; line-height:42px; margin-bottom:18px;}
+	.vision-flow .two {margin-top:50px;}
+}
 
 
 
