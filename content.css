@@ -73,12 +73,14 @@ width: 440px; margin-left: -220px; font-weight: 600; color: #fff; font-size: 25p
 
 
 /*서브페이지 01*/
-#container-wrap {padding-top:80px; z-index: 1000;}
-#container-wrap .subtop {position:relative; z-index: 1000;}
+#container-wrap {padding-top:80px; z-index: 1000; position:relative; }
+.subtop {position:relative; z-index: 1000;  width: 100%; margin: 0 auto;}
+.subtop .visi-tit {height: 450px;}
+.subtop .visi-tit img {z-index: 1; width: 2000px; height: 450px; position: absolute; margin-left: -1000px; left: 50%;}
+
 
 #sub-navi-wrap {display: block; width: 100%; position: absolute; height: 55px; left: 0; top: -55px; z-index: 8000;}
 #sub-navi-wrap:after {content:""; position:absolute; left:50%; margin-left:-1000px; width:2000px; height:1px; background:rgba(255,255,255,0.3); display:block; top:0;}
-
 #sub-navi-wrap .st_navi {height: 55px;}
 #sub-navi-wrap .lm-tit {display: none; font-weight: 800; background: #13756f; color: #fff; text-align: center; padding: 45px 0.7em; font-size: 25px; line-height: 1.2em; letter-spacing: -1px;}
 #sub-navi-wrap .lm-tit button {display: none;}
@@ -93,7 +95,7 @@ width: 440px; margin-left: -220px; font-weight: 600; color: #fff; font-size: 25p
 
 #sub1-conts-wrap {min.lm_l2-height:350px; letter-spacing:-0.02em; word-break:keep-all; word-wrap:break-word;}
 .sub1-contop {position:relative; max-width:1200px; margin:0 auto;}
-.con_tit {line-height: 1.2em; padding: 72px 0; text-align: center;}
+.sub1-contop .con_tit {line-height: 1.2em; padding: 72px 0; text-align: center;}
 .con_tit h2 {display:block; font-size:36px; font-weight:400; font-family:"Malgun Gothic"; text-transform:uppercase;line-height:1.2em; color:#111; letter-spacing:-0.03em;}
 .con_tit .con-prev, .con_tit .con-next {position:absolute; top:50%; width:62px; height:62px; margin-top:-31px;}
 .con_tit .con-prev, .con_tit .con-next {transition-delay:0.3s;-webkit-transition:all 0.3s ease-out;-moz-transition:all 0.3s ease-out;-o-transition:all 0.3s ease-out;	transition:all 0.3s ease-out;}
@@ -104,8 +106,7 @@ width: 440px; margin-left: -220px; font-weight: 600; color: #fff; font-size: 25p
 .con_tit .con-next:hover {background:url(img/cont-next-o.png); background-repeat: no-repeat;}
 
 #sub1-container {position:relative;display:block;}
-#sub1-container:after {content:"";display:block;clear:both;}
-
+#sub1-container:after {content:"";display:block; clear:both;}
 
 .vision-bg:after {background:url(img/vision-bg.jpg); background-repeat: no-repeat; background-position: center top; width:2000px; height:100%;display:block;content:"";position:absolute;left:50%;margin-left:-1000px;z-index:-2;top:0}
 .vision-top {position:relative; min-height:420px; margin-bottom:105px;}
@@ -115,7 +116,7 @@ width: 440px; margin-left: -220px; font-weight: 600; color: #fff; font-size: 25p
 
 .vision-mtit {opacity: 1; padding-top: 0px;}
 .vision-mtit .mtxt {font-size: 25px; font-weight: normal;}
-.vision-mtit::after {content: ""; width: 20px; height: 3px; position: absolute; left: 50%; margin-left: -10px; bottom: 0; background: #333; display: block;}
+.vision-mtit:after {content: ""; width: 20px; height: 3px; position: absolute; left: 50%; margin-left: -10px; bottom: 0; background: #333; display: block;}
 .vision-mtit .btxt {display: block; font-weight: bold; font-size: 34px; margin-top: 20px;}
 
 
